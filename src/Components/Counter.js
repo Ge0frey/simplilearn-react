@@ -1,26 +1,16 @@
 import React, { Component } from 'react'
+import UpdatedComponent from './HigherOrderComponents'
 
 export class Counter extends Component {
-    constructor(props) {
-      super(props)
     
-      this.state = {
-         countnum: 0
-      }
-    }
-
-    incrementValue = () => {
-        this.setState ({countnum:this.state.countnum+1})
-    }
-
   render() {
-    const {countnum} = this.state; 
+    const {count, incrementValue} = this.props; 
     return (
       <div>
-        <button onMouseEnter={this.incrementValue}>Increment {countnum}</button>
+        <button onMouseEnter={incrementValue}> Increment {count}</button>
       </div>
     )
   }
 }
 
-export default Counter
+export default UpdatedComponent(Counter, 10)

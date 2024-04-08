@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <FunctionalComonent/>
-      <Click/>  
+      <Click name = "Ge0frey"/>  
       <Counter /> 
     </div>
   );

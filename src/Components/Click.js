@@ -1,30 +1,19 @@
 import React, { Component } from 'react'
+import UpdatedComponent from './HigherOrderComponents'
 
 class Click extends Component {
 
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         count: 0
-      }
-    }
-
-    updateClick = () => {
-        this.setState ({count:this.state.count+1})
-    }
-
   render() {
-    const {count} = this.state
+    const {count, incrementValue} = this.props
     return (
         <div>
-            <button onClick={this.updateClick}>
-                Clicked {count} time
+            <button onClick={incrementValue}>
+              {this.props.name} Clicked {count} time
             </button>
         </div>
     )
   }
 }
 
-export default Click;
+export default UpdatedComponent(Click, 5);
 
