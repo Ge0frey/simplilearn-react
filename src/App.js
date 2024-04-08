@@ -5,6 +5,7 @@ import ParentComponent from "./Components/ParentComponent";
 import Classprops from "./Components/Classprops";
 import FunctionProps from "./Components/FunctionProps";
 import Home from "./Components/StateFunction";
+import StateClass from "./Components/StateClass";
 
 function App() {
   const major = "Computer Science";
@@ -22,6 +23,7 @@ function App() {
       </Classprops>
       <FunctionProps name = "John Doe" major = {major}/>
       <Home />
+      <StateClass/>
     </div>
   );
 }
