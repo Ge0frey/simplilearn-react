@@ -21,12 +21,13 @@ export class ParentComponent extends Component {
     }
 
   render() {
+    const {name} = this.state
     //console.log("Parent component render")
     return (
       <div>
         I am the parent component
-        <PureComp name= {this.state.name}/>
-        <RegComp name = {this.state.name}/>
+        <PureComp name= {name}/>
+        <RegComp name = {name}/>
       </div>
     )
   }
