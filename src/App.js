@@ -1,6 +1,7 @@
 import FunctionalComonent from "./Components/FunctionalComponent"
 import Click from "./Components/Click";
 import Counter from "./Components/Counter";
+import ParentComponent from "./Components/ParentComponent";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <FunctionalComonent/>
       <Click name = "Ge0frey"/>  
       <Counter /> 
+      <ParentComponent/>
     </div>
   );
 }
