@@ -1,7 +1,7 @@
 import React from 'react'
 
 function FunctionProps(props) {
-    console.log(props)
+    //console.log(props)
     const {name, major} = props
   return (
     <div>

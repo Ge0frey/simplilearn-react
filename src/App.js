@@ -4,6 +4,7 @@ import Counter from "./Components/Counter";
 import ParentComponent from "./Components/ParentComponent";
 import Classprops from "./Components/Classprops";
 import FunctionProps from "./Components/FunctionProps";
+import Home from "./Components/StateFunction";
 
 function App() {
   const major = "Computer Science";
@@ -20,6 +21,7 @@ function App() {
         <button>Click here</button>
       </Classprops>
       <FunctionProps name = "John Doe" major = {major}/>
+      <Home />
     </div>
   );
 }
