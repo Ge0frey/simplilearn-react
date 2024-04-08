@@ -6,24 +6,24 @@ class StateClass extends Component {
       super(props)
     
       this.state = {
-        name: "John",
-        age: 56
+        message: "Subscribe to our channel",
+        clickMsg: "SUBSCRIBE"
       }
     }
 
     handleClick = () => {
         this.setState ({
-            name: "Ludwig",
-            age: 25
+            message: "Thank you for subscribing to my channel!!!",
+            clickMsg: "SUBSRIBED"
         })
     } 
 
   render() {
-    const {name, age} = this.state
+    const {message, clickMsg} = this.state
     return (
       <div>
-        <p>{name} is {age} years old </p>
-        <button onClick={this.handleClick}>CLICK</button>
+        <p>{message}</p>
+        <button onClick={this.handleClick}>{clickMsg}</button>
       </div>
     )
   }
